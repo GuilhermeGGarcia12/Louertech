@@ -12,8 +12,8 @@ body{
     width: 100%;
     height: auto; 
     margin: auto;
-    /* background-image: url(../lourlab/img_2°UC/tentando1.jpg);
-     background-size: cover; */
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',sans-serif;
+
 }
 
 header{
@@ -25,20 +25,30 @@ header{
 .quemSomos{
     width:100%;
     height: 600px;
-    background-image: url(../assets/imgFundo.jpg);
-     background-size: cover; 
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    height: 100%;
 }
 
 #textPrincipal{
-    font-size: 70px;
+    font-size: 55px;
     color: rgba(255, 255, 255, .9);
     text-align: right;
-    padding: 50px 0 30px 0;
+    padding: 50px 0px 30px 750px;
+    position:absolute;
+    z-index: 5;
+    float: right;
 }
 
 .textoQuemSomos{
     font-size: 30px;
     color: rgba(255, 255, 255, .9);
+    position:absolute;
+    z-index: 5;
+    padding: 150px 50px;
 }
 
 .areaTexto{
@@ -47,11 +57,12 @@ header{
     width: 40%;
     height: auto;
     text-align: center;
+    padding-right: 45px;
 }
 
 .historia{
     width: 100%;
-    height: 330px;
+    height: auto;
     background-color: white;
     align-items: center;
     text-align: center;
@@ -78,16 +89,17 @@ header{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    padding-top: 5px;
 }
 
 .textoMaiorProposito{
-    font-size: 50px;
+    font-size: 45px;
     color: white;
     padding: 10px 0 10px 0;
 }
 
 .textoMenorProposito{
-    font-size: 30px;
+    font-size: 25px;
     color: white; 
 }
 
@@ -95,12 +107,7 @@ header{
     width: 50px;
     height: 50px;
     /* background-color: white; */
-    padding: 10px 0 50px 0;
-}
-
-img{
-    width: 100%;
-    height: 100%;
+    padding: 10px 0 30px 0;
 }
 
 #areaMapas{
@@ -108,6 +115,7 @@ img{
     height: 308.5px;
     display:flex;
     flex-direction: row;
+    box-sizing: border-box;
 }
 
 .textoMaps{
@@ -138,6 +146,7 @@ img{
     height: 308.5px;
     display:flex;
     flex-direction: row;
+    box-sizing: border-box;
 }
 
 .imgParceiros{
@@ -195,7 +204,7 @@ img{
     top: 0;
     right: 0;
     z-index: -1;
-    background-color: #3434ee;
+    background-color: #06A1DA;
     border-radius: 50px;
      box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
      7px 7px 20px 0px rgba(0,0,0,.1),
@@ -216,14 +225,16 @@ img{
 .nossosParceiros{
     width: 100%;
     height: auto;
+    /* margin-top: 20px; */
 }
 
 #areaTituloparceiros{
     width: 100%;
-    height: 100px;
-    background-color: #63636A;
+    /* height: 80px; */
+    background-color: #06A1DA;
     text-align: center;
-    padding-top: 30px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 #textoBranco{
@@ -253,14 +264,123 @@ img{
 }
 
 #logoMarca:hover{
-    width: 14%;
-    height: 130px;
-    transition: 1s;
+    transform: scale(1.2);
+    /* transition: 1s; */
 }
 
 
 footer{
     width: 100%;
-    height: auto;
+    height: 250px;
     background-color: #63636A;
+}
+
+@media screen and (max-width: 480px){
+    .quemSomos{
+        width:100%;
+        height: fit-content;
+    }
+    #textPrincipal{
+        font-size: 25px;
+        padding: 10px 0 0 230px;    
+    }
+    
+    .textoQuemSomos{
+        font-size: 14px;
+        padding: 50px 10px 0 70px;
+    }
+
+    .historia{
+        padding: 35px;
+        box-sizing: border-box;
+    }
+
+    .titHistoria{
+        font-size: 35px;
+    }
+    
+    .textHistoria{
+        font-size: 15px;
+    }
+
+    .textoMaiorProposito{
+        font-size: 25px;
+        width: 80%;
+
+    }
+    
+    .textoMenorProposito{
+        font-size: 15px;
+        width: 80%;
+    }
+    
+    .espacoIcone{
+        width: 25px;
+        height: 25px;
+        padding: 5px 0 15px 0;
+    }
+    
+    .sessaoProposito{
+        height: auto;        
+    }
+
+    #areaMapas{
+        width: 100%;
+        height: 200px;
+        flex-direction: column;
+        box-sizing: border-box;
+        margin: auto;
+        padding-bottom: 251px;
+    }
+    
+    .textoMaps{
+        width: 90%;
+        padding: 5px;
+    }
+    
+    .titMaps{
+        font-size: 25px;
+        padding: 5px 0 0 10px;
+    }
+    
+    .textMaps{
+        font-size: 15px;
+    }
+    
+    .mapa{
+        width: 90%;
+        height: 150px;
+        margin: auto;
+    }
+    
+    .parceiros{
+        margin-top: 15px;
+        height:500px;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color:brown;
+    }
+    
+    .imgParceiros{
+        margin: auto;
+        height: 200px;
+        padding: 500px 0 0 0;
+    }
+    
+    .areaParceiros{
+        width: 50%;
+        height: 308.5px;
+        text-align: center;
+        align-items: center;
+        padding-top: 100px;
+        box-sizing: border-box;
+        display:flex;
+        flex-direction:column;
+        float: left;
+    }
+    
+    .textParceiros{
+        font-size: 40px;
+        padding-bottom: 25px;
+    }
 }
